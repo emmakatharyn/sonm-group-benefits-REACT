@@ -1,3 +1,6 @@
+import React from "react"
+import { RouterProvider } from "react-router-dom";
+import { router, pagesComponents } from "./routerRoot";
 import logo from "./logo.png";
 import "./App.css";
 
@@ -8,6 +11,9 @@ function App() {
     <div>
       <Header />
       <Nav />
+      <React.StrictMode>
+        <RouterProvider router={router} />
+      </React.StrictMode>
     </div>
   );
 }
@@ -38,39 +44,13 @@ function Nav() {
         </button>
         <div class='collapse navbar-collapse' id='navbarNav'>
           <ul class='navbar-nav'>
-            <li class='nav-item'>
-              <a class='nav-link' href='index.html'>
-                Home
-              </a>
-            </li>
-            <li class='nav-item'>
-              <a
-                class='nav-link'
-                href='https://healthcenters.proactive-md.com/state-of-new-mexico/stay-well-health-center-santa-fe/'
-              >
-                Stay Well Health Center
-              </a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='employeePortal.html'>
-                Employee Resources
-              </a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link' href='employerResources.html'>
-                Employer Resources
-              </a>
-            </li>
-            <li class='nav-item'>
-              <a href='employeePortal.html' class='nav-link'>
-                Enroll Here
-              </a>
-            </li>
-            <li class='nav-item'>
-              <a href='#contactSection' class='nav-link'>
-                Contact Us
-              </a>
-            </li>
+            {pagesComponents.map((page) => (
+              <li class='nav-item'>
+                <a class='nav-link' href={page.path}>
+                  {page.path}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
