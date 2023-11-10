@@ -47,7 +47,7 @@ function Nav() {
             {pagesComponents.map((page) => (
               <li class='nav-item'>
                 <a class='nav-link' href={page.path}>
-                  {page.path}
+                  {page.name}
                 </a>
               </li>
             ))}
