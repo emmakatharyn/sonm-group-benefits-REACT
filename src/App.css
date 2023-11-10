@@ -530,3 +530,128 @@ h5.modal-title {
 #adminLetters a:visited {
   font-size: 18px;
 }
+/* ********************** */
+/* MEDIA QUERIES HEREEEEE */
+/* ********************** */
+@media screen and (max-width: 1290px) {
+  #aboutUs > img {
+    object-fit: cover;
+    max-width: 420px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .swiper-wrapper {
+    /* width: 100%; */
+    width: 50%;
+  }
+
+  .swiper-pagination {
+    /* display: none; */
+    width: 49%;
+  }
+
+  .swiper-pagination-bullet {
+    font-size: 16px;
+  }
+
+  .swiper-button-next {
+    right: 49.5%;
+  }
+
+  .btn.btn-primary.quicklink {
+    padding: 42px 31px;
+    border-radius: 0;
+  }
+
+  #aboutUs > img {
+    display: none;
+  }
+
+  footer div.container {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-box {
+    width: 100%;
+  }
+
+  footer div.container.erisa-credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list-box li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .list-box li a:link,
+  .list-box li a:visited {
+    /* font-size: 18px; */
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  .swiper-wrapper {
+    width: 100%;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, 10px);
+  }
+
+  .quicklinks-container {
+    flex-direction: column;
+  }
+
+  /* employerResources */
+  .side-by-side {
+    width: 100%;
+    flex-direction: column;
+  }
+  .list-box {
+    width: 100%;
+  }
+  .list-box li a:link,
+  .list-box li a:visited {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* footer sonm logo w/ link need to be separated */
+  .portal-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card img {
+    max-height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .floater-box a:link,
+  .floater-box a:visited {
+    font-size: 16px;
+  }
+
+  footer div.container {
+    grid-template-columns: 1fr;
+  }
+
+  footer div.container.erisa-credits {
+    flex-direction: column;
+  }
+}
