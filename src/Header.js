@@ -1,6 +1,6 @@
 import logo from "./logo.png";
 
-export function Header() {
+function Header() {
   return (
     <header className='container-lg'>
       <img src={logo} alt='State of New Mexico Seal' />
@@ -8,3 +8,5 @@ export function Header() {
     </header>
   );
 }
+
+export default Header;

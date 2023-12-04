@@ -1,6 +1,9 @@
-import { pagesComponents } from "./routerRoot";
+// import { pagesComponents } from "./routerRoot";
+import { Link, NavLink } from "react-router-dom";
 
-export function RouterNav() {
+import "./App.css";
+
+export default function RouterNav() {
   return (
     <nav className='navbar navbar-expand-lg bg-light'>
       <div className='container-fluid'>
@@ -17,13 +20,41 @@ export function RouterNav() {
         </button>
         <div className='collapse navbar-collapse' id='navbarNav'>
           <ul className='navbar-nav'>
-            {pagesComponents.map((page) => (
-              <li className='nav-item'>
-                <a className='nav-link' href={page.path}>
-                  {page.name}
-                </a>
-              </li>
-            ))}
+            <li className='nav-item'>
+              <NavLink className='nav-link' to='/'>
+                Home
+              </NavLink>
+            </li>
+            <li className='nav-item'>
+              <NavLink className='nav-link' to='employees'>
+                Employees
+              </NavLink>
+            </li>
+            <li className='nav-item'>
+              <NavLink className='nav-link' to='employers'>
+                Employers
+              </NavLink>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='https://healthcenters.proactive-md.com/state-of-new-mexico/stay-well-health-center-santa-fe/'
+                className='nav-link'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Stay Well Health Center
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <NavLink className='nav-link' to='enrollment'>
+                Enroll Here
+              </NavLink>
+            </li>
+            <li className='nav-item'>
+              <NavLink className='nav-link' to='contact'>
+                Contact Us
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
