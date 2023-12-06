@@ -2,8 +2,10 @@ import React from "react";
 
 import Root from "./Root";
 import Home from "./pages/Home";
-import Employees from "./pages/Employees";
+import { StateEmployees, LPBEmployees, Employees } from "./pages/Employees";
+import Employers from "./pages/Employers";
 import Contact from "./pages/Contact";
+import Enrollment from "./pages/Enrollment";
 
 import {
   Route,
@@ -18,9 +20,13 @@ import "./App.css";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Root />}>
-      <Route path='employees' element={<Employees />} />
+      <Route path='home' index element={<Home />} />
+      <Route path='/employees' element={<Employees />}>
+        <Route path='state' element={<StateEmployees />} />
+        <Route path='lpb' element={<LPBEmployees />} />
+      </Route>
       <Route path='employers' element={<Employers />} />
-      <Route path='enrollment' element={<div>enrollment info</div>} />
+      <Route path='enrollment' element={<Enrollment />} />
       <Route path='contact' element={<Contact />} />
     </Route>
   )
@@ -28,20 +34,6 @@ const router = createBrowserRouter(
 
 function App() {
   return <RouterProvider router={router} />;
-}
-
-function Employers() {
-  return (
-    <>
-      <h4>Documents and Forms</h4>
-      <ul>
-        <li>item one</li>
-        <li>item two</li>
-        <li>item three</li>
-        <li>item four</li>
-      </ul>
-    </>
-  );
 }
 
 export default App;
