@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import StateEmployees from "../components/stateEmployees";
 
 export default function Employees() {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -29,7 +30,7 @@ export default function Employees() {
       </div>
 
       <div>
-        {selectedOption === "state" && <p>STATE EMPLOYEE STUFF GOES HERE!</p>}
+        {selectedOption === "state" && <StateEmployees />}
         {selectedOption === "lpb" && <p>LPB EMPLOYEE STUFF GOES HERE!!!</p>}
       </div>
     </div>

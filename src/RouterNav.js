@@ -21,7 +21,7 @@ export default function RouterNav() {
         <div className='collapse navbar-collapse' id='navbarNav'>
           <ul className='navbar-nav'>
             <li className='nav-item'>
-              <NavLink className='nav-link' to='/'>
+              <NavLink className='nav-link' to='home'>
                 Home
               </NavLink>
             </li>
