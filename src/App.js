@@ -2,7 +2,7 @@ import React from "react";
 
 import Root from "./Root";
 import Home from "./pages/Home";
-import { StateEmployees, LPBEmployees, Employees } from "./pages/Employees";
+import Employees from "./pages/Employees";
 import Employers from "./pages/Employers";
 import Contact from "./pages/Contact";
 import Enrollment from "./pages/Enrollment";
@@ -21,10 +21,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Root />}>
       <Route path='home' index element={<Home />} />
-      <Route path='/employees' element={<Employees />}>
-        <Route path='state' element={<StateEmployees />} />
-        <Route path='lpb' element={<LPBEmployees />} />
-      </Route>
+      <Route path='/employees' element={<Employees />}></Route>
       <Route path='employers' element={<Employers />} />
       <Route path='enrollment' element={<Enrollment />} />
       <Route path='contact' element={<Contact />} />
