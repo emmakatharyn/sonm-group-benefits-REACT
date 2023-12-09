@@ -21,6 +21,16 @@ import "./App.css";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Root />}>
+      <Route
+        path='admin-letters'
+        element={<h1>AdministrativeLetters.html</h1>}
+      />
+      <Route
+        path='domestic-partnership'
+        element={
+          <div>employerResourcesSub1.html (Domestic Partnership Forms)</div>
+        }
+      />
       <Route path='home' index element={<Home />} />
       <Route path='employees' element={<Employees />} />
       <Route path='employers' element={<Employers />} />
