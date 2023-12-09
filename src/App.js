@@ -6,6 +6,7 @@ import Employees from "./pages/Employees";
 import Employers from "./pages/Employers";
 import Contact from "./pages/Contact";
 import Enrollment from "./pages/Enrollment";
+import StateAgencyEmployees from "./pages/StateAgencyEmployees";
 
 import {
   Route,
@@ -25,6 +26,17 @@ const router = createBrowserRouter(
       <Route path='employers' element={<Employers />} />
       <Route path='enrollment' element={<Enrollment />} />
       <Route path='contact' element={<Contact />} />
+      <Route path='state-agency-employees' element={<StateAgencyEmployees />} />
+      <Route
+        path='qualifying-event'
+        element={<div>employeeportalsub2 content here!!!! (QE)</div>}
+      />
+      <Route
+        path='benefits-info'
+        element={<div>Benefits Information Grid</div>}
+      />
+
+      <Route path='share' element={<div>employeePortalSub3 (SHARE)</div>} />
     </Route>
   )
 );
