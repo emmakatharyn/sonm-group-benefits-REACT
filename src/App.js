@@ -37,6 +37,7 @@ const router = createBrowserRouter(
       <Route path='enrollment' element={<Enrollment />} />
       <Route path='contact' element={<Contact />} />
       <Route path='state-agency-employees' element={<StateAgencyEmployees />} />
+      <Route path='pop-waivers' element={<div>POPwaivers.html</div>} />
       <Route
         path='qualifying-event'
         element={<div>employeeportalsub2 content here!!!! (QE)</div>}
@@ -47,6 +48,14 @@ const router = createBrowserRouter(
       />
 
       <Route path='share' element={<div>employeePortalSub3 (SHARE)</div>} />
+      <Route
+        path='term-life-calculator'
+        element={<div>TermLifePremiumCal.html</div>}
+      />
+      <Route
+        path='benefits-calculator'
+        element={<div>ViewPremiumCal.html</div>}
+      />
     </Route>
   )
 );
