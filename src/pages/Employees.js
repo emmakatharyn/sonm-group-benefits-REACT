@@ -13,7 +13,7 @@ export default function Employees() {
       <p clasNames='ps-2'>Please select one:</p>
       <div className='select-one-box py-5 my-3'>
         <button
-          className='btn'
+          className={`btn ${selectedOption === "state" ? "on" : ""}`}
           id='iAmStateEE'
           onClick={() => handleButtonClick("state")}
         >
@@ -21,7 +21,7 @@ export default function Employees() {
         </button>
 
         <button
-          className='btn'
+          className={`btn ${selectedOption === "lpb" ? "on" : ""}`}
           id='iAmLPBEE'
           onClick={() => handleButtonClick("lpb")}
         >
