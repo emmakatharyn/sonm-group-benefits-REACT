@@ -40,7 +40,12 @@ const router = createBrowserRouter(
       <Route path='pop-waivers' element={<div>POPwaivers.html</div>} />
       <Route
         path='qualifying-event-state'
-        element={<div>employeeportalsub2 content here!!!! (QE)</div>}
+        element={<div>employeeportalsub2 content here!!!! (QE state)</div>}
+      />
+
+      <Route
+        path='qualifying-event-lpb'
+        element={<div>employeeportalsub5 content here!!!! (QE lpb)</div>}
       />
       <Route
         path='benefits-info'
