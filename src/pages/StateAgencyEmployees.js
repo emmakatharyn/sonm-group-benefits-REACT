@@ -58,7 +58,10 @@ function StateAgencyEmployees() {
           <i className='bx bxs-pen'></i>
           <br />I Wish to Enroll in Supplemental Term Life Only
         </Link>
-        <Link to='/qualifying-event' className='btn btn-primary quicklink'>
+        <Link
+          to='/qualifying-event-state'
+          className='btn btn-primary quicklink'
+        >
           <i className='bx bxs-pen'></i>
           <br />I am NOT a New Hire and have a Qualifying Event
         </Link>

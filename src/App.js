@@ -39,7 +39,7 @@ const router = createBrowserRouter(
       <Route path='state-agency-employees' element={<StateAgencyEmployees />} />
       <Route path='pop-waivers' element={<div>POPwaivers.html</div>} />
       <Route
-        path='qualifying-event'
+        path='qualifying-event-state'
         element={<div>employeeportalsub2 content here!!!! (QE)</div>}
       />
       <Route
@@ -48,6 +48,11 @@ const router = createBrowserRouter(
       />
 
       <Route path='share' element={<div>employeePortalSub3 (SHARE)</div>} />
+
+      <Route
+        path='qualifying-event-lpb'
+        element={<div> employeePortalSub5 QE for LPB and Legislators</div>}
+      />
       <Route
         path='term-life-calculator'
         element={<div>TermLifePremiumCal.html</div>}

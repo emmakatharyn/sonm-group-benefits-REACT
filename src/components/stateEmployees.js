@@ -8,7 +8,7 @@ function StateEmployees() {
         <br />I am a New Hire
       </Link>
       {/* previously linked to employeeportalsub2 */}
-      <Link to='/qualifying-event' class='btn btn-primary quicklink'>
+      <Link to='/qualifying-event-state' class='btn btn-primary quicklink'>
         <i class='bx bxs-calendar-exclamation'></i>
         <br />I have a Qualifying Event
       </Link>
