@@ -16,6 +16,10 @@ body {
   padding: 0;
 }
 
+main {
+  min-height: 75vh;
+}
+
 li {
   list-style: none;
 }
