@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import StateEmployees from "../components/stateEmployees";
+import LPBEmployees from "../components/LPBEmployees";
 
 export default function Employees() {
   const [selectedOption, setSelectedOption] = useState(null);
@@ -31,7 +32,7 @@ export default function Employees() {
 
       <div>
         {selectedOption === "state" && <StateEmployees />}
-        {selectedOption === "lpb" && <p>LPB EMPLOYEE STUFF GOES HERE!!!</p>}
+        {selectedOption === "lpb" && <LPBEmployees />}
       </div>
     </div>
   );
