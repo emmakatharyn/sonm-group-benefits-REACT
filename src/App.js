@@ -31,7 +31,8 @@ const router = createBrowserRouter(
           <div>employerResourcesSub1.html (Domestic Partnership Forms)</div>
         }
       />
-      <Route path='home' index element={<Home />} />
+      <Route index element={<Home />} />
+      <Route path='home' element={<Home />} />
       <Route path='employees' element={<Employees />} />
       <Route path='employers' element={<Employers />} />
       <Route path='enrollment' element={<Enrollment />} />
