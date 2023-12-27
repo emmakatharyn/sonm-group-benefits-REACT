@@ -1,11 +1,8 @@
-// realizing a home page may not be necessary?
+import { Carousel } from "../Carousel/Carousel";
+import "../Carousel/carousel.css";
 
 function Home() {
-  return (
-    <div style={{ backgroundColor: "gray", height: "420px" }}>
-      Swiper banner goes here
-    </div>
-  );
+  return <Carousel />;
 }
 
 export default Home;
