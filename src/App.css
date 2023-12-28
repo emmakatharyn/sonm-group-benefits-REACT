@@ -445,24 +445,6 @@ h5.modal-title {
 }
 
 @media screen and (max-width: 992px) {
-  .swiper-wrapper {
-    /* width: 100%; */
-    width: 50%;
-  }
-
-  .swiper-pagination {
-    /* display: none; */
-    width: 49%;
-  }
-
-  .swiper-pagination-bullet {
-    font-size: 16px;
-  }
-
-  .swiper-button-next {
-    right: 49.5%;
-  }
-
   .btn.btn-primary.quicklink {
     padding: 42px 31px;
     border-radius: 0;
@@ -501,18 +483,6 @@ h5.modal-title {
 }
 
 @media screen and (max-width: 782px) {
-  .swiper-wrapper {
-    width: 100%;
-  }
-
-  .swiper-pagination {
-    display: none;
-  }
-
-  .swiper-button-next {
-    right: var(--swiper-navigation-sides-offset, 10px);
-  }
-
   .quicklinks-container {
     flex-direction: column;
   }
