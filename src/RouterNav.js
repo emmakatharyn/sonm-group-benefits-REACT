@@ -27,12 +27,12 @@ export default function RouterNav() {
             </li>
             <li className='nav-item'>
               <NavLink className='nav-link' to='employees'>
-                Employees
+                Employee Resources
               </NavLink>
             </li>
             <li className='nav-item'>
               <NavLink className='nav-link' to='employers'>
-                Employers
+                Employer Resources
               </NavLink>
             </li>
             <li className='nav-item'>
