@@ -7,6 +7,7 @@ import Employers from "./pages/Employers";
 import Contact from "./pages/Contact";
 import Enrollment from "./pages/Enrollment";
 import StateAgencyEmployees from "./pages/StateAgencyEmployees";
+import AdministrativeLetters from "./pages/AdministrativeLetters";
 
 import {
   Route,
@@ -24,10 +25,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path='home' element={<Home />} />
 
-      <Route
-        path='admin-letters'
-        element={<h1>AdministrativeLetters.html</h1>}
-      />
+      <Route path='admin-letters' element={<AdministrativeLetters />} />
       <Route
         path='domestic-partnership'
         element={
